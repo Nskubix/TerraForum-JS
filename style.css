@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin-top: 2.5rem;
+    font-family: "Lato", sans-serif;
+    display: flex;
+    background-image: url(img/bg_blur.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size:cover;
+    color: whitesmoke;
+    font-size: 1.25rem;
+}
+nav,main{
+    background-color: #503434;
+    min-height: 100vh;
+    margin: 1rem;
+}
+nav,section{
+    width: 250px;
+    margin: 1rem;
+}
+main{
+    width: 100%;
+}
+
+.navigation{
+    display: flex;
+    flex-flow: column nowrap;
+    border-radius: 15px;
+    padding: 0.5rem;
+    h2{
+        margin: 1rem 0 1rem 0.75rem;
+    }
+    .navitem{
+        width: 96%;
+        padding-top: 0.25rem;
+        padding-bottom: 0.25rem;
+        margin: 0;
+        margin-bottom: 1rem;
+        display: flex;
+        align-items: center;
+        &:hover{
+            text-decoration: underline;
+            cursor: pointer;
+            background-color: #60443c;
+            border-radius: 10px;   
+        }
+    }
+    
+}
+
+.main{
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 0.1rem;
+    align-items: center;
+    border-radius: 20px;
+    h1{
+        padding: 2rem;
+        font-size: 4rem;
+        text-align: center;
+    }
+    .newpost{
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        width: 80%;
+        min-height: 450px;
+        border-radius: 25px;
+        border-top-left-radius: 4px;
+    }
+    .newpostsect{
+        margin: 0;
+        background-color: #60443c;
+        border: #352222 3px solid;
+        width: 100%;
+        height: 390px;
+        border-radius: 25px;
+        border-top-left-radius: 4px;
+        .userinput{
+            background-color: transparent;
+            border: none;
+            width: 100%;
+            height: 305px;
+            border-top-right-radius: 26px;
+            font-size: 1.5rem;
+            padding: 0.25rem;
+            resize: none;     
+        }  
+        hr{
+            border: #352222 2px solid;
+        } 
+    }
+    .post{
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        width: 80%;
+        height: 450px;
+        border-radius: 25px;
+        border-top-left-radius: 4px;
+    }
+    .postsect{
+        margin: 0;
+        font-size: 1.5rem;
+        padding: 0.5rem;
+        background-color: #60443c;
+        border: #352222 3px solid;
+        width: 100%;
+        height: 375px;
+        border-radius: 25px;
+        border-top-left-radius: 4px;
+    }
+}
+
+.login{
+    display: flex;
+    justify-content: space-around;
+    height: 3rem;
+    align-items: center;
+    background-color: #503434;
+    border-radius: 15px;
+    a{
+        color: whitesmoke;
+        text-decoration: none;
+        padding: 0rem 0rem 0rem 0rem;
+        &:hover{
+            text-decoration: underline;
+        }
+        text-align: center; 
+    }
+}
+
+.hidden{
+    display: none !important;
+}
+
+.userdisplaynp{
+    display: flex;
+    justify-content: flex-start;
+    width: 99%;
+    gap: 1.25rem;
+    align-items: center;
+}
+.userdisplay{
+    display: flex;
+    justify-content: flex-start;
+    width: 99%;
+    gap: 1.25rem;
+    align-items: center;
+    text-wrap: nowrap;
+}
+
+.imagebox{
+    margin: 0;
+    width: 50px;
+    height: 50px;
+    display: grid;
+    place-content: center;
+}
+
+.newpostfooter{
+    width: 100%;
+    position: relative;
+    display: flex;
+    margin: 0;
+    align-items: center;
+    margin-left: 1rem;
+    padding: 0.5rem 0.05rem
+}
+
+.select{
+    display: flex;
+    margin: 0;
+    margin-left: 1rem;
+    gap: 2rem;
+}
+.sendbutton{
+    position: absolute;
+    right: 5%;
+    border: none;
+    background-color: #352222;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    border-radius: 15px;
+    color: whitesmoke;
+    font-family: "Lato", sans-serif;
+    
+}
+.sendbutton,.newpostfooter .imagebox{
+    &:hover{
+        filter: brightness(140%) saturate(120%);
+        cursor: pointer;
+    }
+}
+.categoryselected{
+    background-color: #352222;
+    box-shadow: 0 0 2px 2px #352222;
+    
+}

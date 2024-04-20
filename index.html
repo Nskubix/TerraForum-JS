@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terra Forum</title>
+    <link rel="shortcut icon" href="img/icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navigation">
+        <h2>Navigation</h2>
+        <ul>   
+            <section class="navitem" id="newplayerfilter">
+                <section class="imagebox">
+                    <img src="img/guide.webp" alt="" style="transform: rotateY(180deg);" width="30px" height="50px">
+                </section>
+                <span>New Players</span>
+            </section>
+            <section class="navitem" id="bossfilter">
+                <section class="imagebox">
+                    <img src="img/boss.webp" alt="" width="40px" height="50px">
+                </section>
+                <span>Bosses</span>
+            </section>
+            <section class="navitem" id="pvpfilter">
+                <section class="imagebox">
+                    <img src="img/pvp.webp" alt=""  width="45px" height="45px">
+                </section>
+                <span>PvP</span>
+            </section>
+            <section class="navitem" id="questionfilter">
+                <section class="imagebox">
+                    <img src="img/question.png" alt=""  width="65px" height="57px">
+                </section>
+                <span>Help</span>
+            </section>
+        </ul>
+    </nav>
+    <main class="main">
+        <h1 class="welcometext">Welcome to Terra Forum!</h1>
+        <section class="newpost">
+            <section class="userdisplaynp">
+                <img src="img/pfp2.jpg" alt="" class="pfp" width="50px" height="50px">
+                <span class="username">Nigga Gaming</span>
+            </section>
+            <section class="newpostsect">
+                <textarea name="" id="" cols="30" rows="10" placeholder="What's Good my Nga" class="userinput" ></textarea>
+                <hr>
+                <section class="newpostfooter">
+                    <span>CATEGORY: </span>
+                    <section class="select">
+                        <section class="imagebox">
+                            <img src="img/guide.webp" alt="" style="transform: rotateY(180deg);" width="29px" height="50px" class="categoryimg">
+                        </section>
+                        <section class="imagebox">
+                            <img src="img/boss.webp" alt=""  width="39px" height="48px" class="categoryimg">
+                        </section>
+                        <section class="imagebox">
+                            <img src="img/pvp.webp" alt=""  width="43px" height="43px" class="categoryimg">
+                        </section>
+                        <section class="imagebox">
+                            <img src="img/question.png" alt=""  width="65px" height="57px" class="categoryimg">
+                        </section> 
+                    </section>
+                    <button type="submit" class="sendbutton" id="sendbuttonid">SEND</button>
+            </section>  
+        </section>
+        <section class="post hidden">
+            <section class="userdisplay">
+                <img src="img/pfp2.jpg" alt="" class="pfp" width="50px" height="50px">
+                <span class="username">Nigga Gaming</span>
+                |
+                <section class="imagebox">
+                    <img src="img/guide.webp" alt="" style="transform: rotateY(180deg);" width="29px" height="50px" class="categoryimg">
+                </section>
+                <span class="postcategory" id="guide">New Players</span>
+            </section>
+            <section class="postsect">
+                <p class="posttext">Post Here!</p>
+            </section>  
+        </section>
+    </main>
+    <section class="login">
+        <a href="login/register.html" class="registeref">register</a>
+        <a href="login/login.html" class="loginref">login</a>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
